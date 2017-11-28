@@ -1,4 +1,4 @@
 ﻿  TextGenerator.cpp
-c:\users\nmuise\desktop\cs-211-project-4-master\textgenerator\textgenerator\textgenerator.cpp(94): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  TextGenerator.vcxproj -> C:\Users\nmuise\Desktop\CS-211-Project-4-master\TextGenerator\x64\Debug\TextGenerator.exe
-  TextGenerator.vcxproj -> C:\Users\nmuise\Desktop\CS-211-Project-4-master\TextGenerator\x64\Debug\TextGenerator.pdb (Full PDB)
+c:\users\nmuise\desktop\cs-211-project-4-master\cs-211-project-4-master\textgenerator\textgenerator\textgenerator.cpp(107): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  TextGenerator.vcxproj -> C:\Users\nmuise\Desktop\CS-211-Project-4-master\CS-211-Project-4-master\TextGenerator\x64\Debug\TextGenerator.exe
+  TextGenerator.vcxproj -> C:\Users\nmuise\Desktop\CS-211-Project-4-master\CS-211-Project-4-master\TextGenerator\x64\Debug\TextGenerator.pdb (Full PDB)

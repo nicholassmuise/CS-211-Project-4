@@ -9,7 +9,7 @@
 #include <random>
 #include <algorithm>
 
-std::vector<int> generateText(double*** trans, int steps, int start, int start2) {
+std::vector<int> GenerateText(double*** trans, int steps, int start, int start2) {
 	//random generator
 	std::random_device rd;
 	std::mt19937 gen(rd());
@@ -20,17 +20,17 @@ std::vector<int> generateText(double*** trans, int steps, int start, int start2)
 	//initialize counter variables
 	int count;
 	double sum;
-	double random;
+	double rand; // random number
 
 	//for each step, simulate the next step from the current state row
 	for (int i = 0; i<steps; i++) {
 		count = 0;
 		sum = 0;
 		
-		random = std::generate_canonical<double, 10>(gen); // random = random number
-		while (sum < random) {
+		rand = std::generate_canonical<double, 10>(gen); //rand = random boi
+		while (sum < rand) {
 			sum += trans[output[i]][output[i + 1]][count];
-			if (sum > random) {
+			if (sum > rand) {
 				output[i + 2] = count;
 			}
 			count++;
@@ -41,25 +41,24 @@ std::vector<int> generateText(double*** trans, int steps, int start, int start2)
 
 
 int main() {
-	//matrices
-	int*** counts;
-	int** total;
-	double*** matrix;
-	counts = new int**[256]; //stores raw numbers of three-character combinations. counts[a][b][c] = number of occurrences of "abc"
-	total = new int*[256]; //stores raw numbers of two-character combinations. total[a][b] = number of occurrences of "ab"
-	matrix = new double**[256]; //stores probabilities. if a, b, and c were 1, 2, 3 in ASCII, martix[1][2][3] would hold the probability of "c" given "ab"
-	//initialize matrix
+	//Initialize matrices
+	int*** triCount; //number of 3 letter combinations
+	int** biCount; //number of 2-letter combinations
+	double*** triProb; //probability of a letter occuring given two previous letters
+	triCount = new int**[256];
+	biCount = new int*[256];
+	triProb = new double**[256];
 	for (int i = 0; i < 256; ++i) {
-		counts[i] = new int*[256];
-		total[i] = new int[256];
-		matrix[i] = new double*[256];
+		triCount[i] = new int*[256];
+		biCount[i] = new int[256];
+		triProb[i] = new double*[256];
 		for (int j = 0; j < 256; ++j) {
-			counts[i][j] = new int[256];
-			matrix[i][j] = new double[256];
-			total[i][j] = 0;
+			triCount[i][j] = new int[256];
+			triProb[i][j] = new double[256];
+			biCount[i][j] = 0;
 			for (int k = 0; k < 256; ++k) {
-				counts[i][j][k] = 0;
-				matrix[i][j][k] = 0.0;
+				triCount[i][j][k] = 0;
+				triProb[i][j][k] = 0.0;
 			}
 		}
 	}
@@ -71,8 +70,8 @@ int main() {
 	int prev = infile.get();
 	int on = infile.get();
 	while (infile.good()) {
-		counts[prev2][prev][on]++;
-		total[prev2][prev]++;
+		triCount[prev2][prev][on]++;
+		biCount[prev2][prev]++;
 		prev2 = prev;
 		prev = on;
 		on = infile.get();
@@ -80,11 +79,11 @@ int main() {
 	infile.close();
 
 	//find percents
-	for (int i = 0; i<256; i++) {
+	for (int i = 0; i<256; i++) { 
 		for (int j = 0; j<256; j++) {
 			for (int k = 0; k<256; k++) {
-				if (total[i][j] != 0) {
-					matrix[i][j][k] = (double)counts[i][j][k] / (double)total[i][j]; //probability of c given ab = #abc's / #ab's
+				if (biCount[i][j] != 0) {
+					triProb[i][j][k] = (double)triCount[i][j][k] / (double)biCount[i][j];
 				}
 			}
 		}
@@ -94,24 +93,24 @@ int main() {
 	srand(time(NULL));
 
 	//generate random text
-	std::vector<int> output = generateText(matrix, 20000, 116, 104);
-	for (int i = 0; i < output.size(); ++i) {
-		std::cout << (char)(output[i]);
+	std::vector<int> discreteMC = GenerateText(triProb, 20000, 116, 104);
+	for (int i = 0; i < discreteMC.size(); ++i) {
+		std::cout << (char)(discreteMC[i]);
 	}
 
 	//de-allocate
 	for (int i = 0; i < 256; ++i) {
 		for (int j = 0; j < 256; ++j) {
-			delete[] counts[i][j];
-			delete[] matrix[i][j];
+			delete[] triCount[i][j];
+			delete[] triProb[i][j];
 		}
-		delete[] counts[i];
-		delete[] total[i];
-		delete[] matrix[i];
+		delete[] triCount[i];
+		delete[] biCount[i];
+		delete[] triProb[i];
 	}
-	delete[] counts;
-	delete[] total;
-	delete[] matrix;
+	delete[] triCount;
+	delete[] biCount;
+	delete[] triProb;
 
 	std::getchar();
 	return 0;
