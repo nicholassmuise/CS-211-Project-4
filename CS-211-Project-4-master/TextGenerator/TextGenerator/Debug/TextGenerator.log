@@ -1,0 +1,5 @@
+﻿  TextGenerator.cpp
+c:\users\xyz\documents\visual studio 2015\projects\textgenerator\textgenerator\textgenerator.cpp(93): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\xyz\documents\visual studio 2015\projects\textgenerator\textgenerator\textgenerator.cpp(97): warning C4018: '<': signed/unsigned mismatch
+  TextGenerator.vcxproj -> C:\Users\XYZ\Documents\Visual Studio 2015\Projects\TextGenerator\Debug\TextGenerator.exe
+  TextGenerator.vcxproj -> C:\Users\XYZ\Documents\Visual Studio 2015\Projects\TextGenerator\Debug\TextGenerator.pdb (Full PDB)
