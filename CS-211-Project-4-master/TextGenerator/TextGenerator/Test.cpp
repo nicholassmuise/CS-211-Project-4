@@ -39,6 +39,22 @@ std::vector<int> GenerateText(double*** trans, int steps, int start, int start2)
 	return output;
 }
 
+//Read
+void read(int*** triCount, int** biCount) {
+	std::ifstream infile;
+	infile.open("Apples.txt", std::ifstream::in);
+	int prev2 = infile.get();
+	int prev = infile.get();
+	int on = infile.get();
+	while (infile.good()) {
+		triCount[prev2][prev][on]++;
+		biCount[prev2][prev]++;
+		prev2 = prev;
+		prev = on;
+		on = infile.get();
+	}
+	infile.close();
+}
 
 int main() {
 	//Initialize matrices
@@ -64,19 +80,7 @@ int main() {
 	}
 
 	//read file
-	std::ifstream infile;
-	infile.open("Apples.txt", std::ifstream::in);
-	int prev2 = infile.get();
-	int prev = infile.get();
-	int on = infile.get();
-	while (infile.good()) {
-		triCount[prev2][prev][on]++;
-		biCount[prev2][prev]++;
-		prev2 = prev;
-		prev = on;
-		on = infile.get();
-	}
-	infile.close();
+	read(triCount, biCount);
 
 	//find percents
 	for (int i = 0; i<256; i++) { 
