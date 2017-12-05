@@ -1,0 +1,7 @@
+
+infile.get():
+
+00010bb4 <_ZNSi3getEv@plt>:
+   10bb4:	e28fc600 	add	ip, pc, #0, 12
+   10bb8:	e28cca12 	add	ip, ip, #73728	; 0x12000
+   10bbc:	e5bcf0e4 	ldr	pc, [ip, #228]!	; 0xe4
