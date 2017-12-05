@@ -1,3 +1,13 @@
+COMMANDS
+
+ls -l
+cd <directory>
+objdump -d binary > assembly.s
+g++ -std=c++11 -O3 code.cpp -o binary
+
+
+
+
 
 infile.get():
 
