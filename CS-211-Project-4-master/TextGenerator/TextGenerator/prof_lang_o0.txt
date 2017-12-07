@@ -1,0 +1,443 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 65.97      1.20     1.20                             main
+ 17.04      1.51     0.31        1   310.16   529.33  GenerateText(double***, int, int, int)
+  9.90      1.69     0.18  3812246     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned int)
+  3.85      1.76     0.07        1    70.04    70.04  std::vector<int, std::allocator<int> >::~vector()
+  1.10      1.78     0.02    20000     0.00     0.00  double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&)
+  0.55      1.79     0.01    40000     0.00     0.00  std::log(long double)
+  0.55      1.80     0.01    20000     0.00     0.00  std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::max()
+  0.55      1.81     0.01        1    10.01    10.01  _GLOBAL__sub_I__Z12GenerateTextPPPdiii
+  0.55      1.82     0.01        1    10.01    10.01  read(int***, int**)
+  0.00      1.82     0.00    40000     0.00     0.00  std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::min()
+  0.00      1.82     0.00    20003     0.00     0.00  std::vector<int, std::allocator<int> >::size() const
+  0.00      1.82     0.00    20000     0.00     0.00  std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::operator()()
+  0.00      1.82     0.00    20000     0.00     0.00  unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+  0.00      1.82     0.00    20000     0.00     0.00  unsigned int const& std::min<unsigned int>(unsigned int const&, unsigned int const&)
+  0.00      1.82     0.00      624     0.00     0.00  std::__detail::_Mod<unsigned int, 0u, 1u, 0u, true, false>::__calc(unsigned int)
+  0.00      1.82     0.00      624     0.00     0.00  unsigned int std::__detail::__mod<unsigned int, 0u, 1u, 0u>(unsigned int)
+  0.00      1.82     0.00      623     0.00     0.00  std::__detail::_Mod<unsigned int, 624u, 1u, 0u, true, true>::__calc(unsigned int)
+  0.00      1.82     0.00      623     0.00     0.00  unsigned int std::__detail::__mod<unsigned int, 624u, 1u, 0u>(unsigned int)
+  0.00      1.82     0.00       33     0.00     0.00  std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::_M_gen_rand()
+  0.00      1.82     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<int>::~new_allocator()
+  0.00      1.82     0.00        2     0.00     0.00  std::allocator<int>::~allocator()
+  0.00      1.82     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.00      1.82     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      1.82     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*)
+  0.00      1.82     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&)
+  0.00      1.82     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.00      1.82     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::max_size() const
+  0.00      1.82     0.00        1     0.00     0.00  std::allocator<int>::allocator(std::allocator<int> const&)
+  0.00      1.82     0.00        1     0.00     0.00  std::allocator<int>::allocator()
+  0.00      1.82     0.00        1     0.00     0.00  std::_Iter_base<int*, false>::_S_base(int*)
+  0.00      1.82     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00      1.82     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+  0.00      1.82     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00      1.82     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&)
+  0.00      1.82     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00      1.82     0.00        1     0.00     0.00  std::random_device::random_device(std::string const&)
+  0.00      1.82     0.00        1     0.00     0.00  std::random_device::~random_device()
+  0.00      1.82     0.00        1     0.00     0.00  std::random_device::operator()()
+  0.00      1.82     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::seed(unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::mersenne_twister_engine(unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  void std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned int>(int*, unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::vector(unsigned int, std::allocator<int> const&)
+  0.00      1.82     0.00        1     0.00     0.00  __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, int*>::__type std::__fill_n_a<int*, unsigned int, int>(int*, unsigned int, int const&)
+  0.00      1.82     0.00        1     0.00     0.00  std::_Niter_base<int*>::iterator_type std::__niter_base<int*>(int*)
+  0.00      1.82     0.00        1     0.00     0.00  void std::__uninitialized_default_n<int*, unsigned int>(int*, unsigned int)
+  0.00      1.82     0.00        1     0.00     0.00  void std::__uninitialized_default_n_a<int*, unsigned int, int>(int*, unsigned int, std::allocator<int>&)
+  0.00      1.82     0.00        1     0.00     0.00  int* std::fill_n<int*, unsigned int, int>(int*, unsigned int, int const&)
+  0.00      1.82     0.00        1     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00      1.82     0.00        1     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.55% of 1.82 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.5    1.20    0.61                 main [1]
+                0.31    0.22       1/1           GenerateText(double***, int, int, int) [2]
+                0.07    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [4]
+                0.01    0.00       1/1           read(int***, int**) [9]
+                0.00    0.00   20002/3812246     std::vector<int, std::allocator<int> >::operator[](unsigned int) [3]
+                0.00    0.00   20003/20003       std::vector<int, std::allocator<int> >::size() const [19]
+-----------------------------------------------
+                0.31    0.22       1/1           main [1]
+[2]     29.1    0.31    0.22       1         GenerateText(double***, int, int, int) [2]
+                0.18    0.00 3792244/3812246     std::vector<int, std::allocator<int> >::operator[](unsigned int) [3]
+                0.02    0.02   20000/20000       double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&) [5]
+                0.00    0.00       1/1           std::random_device::random_device(std::string const&) [48]
+                0.00    0.00       1/1           std::random_device::operator()() [50]
+                0.00    0.00       1/1           std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::mersenne_twister_engine(unsigned int) [54]
+                0.00    0.00       1/1           std::allocator<int>::allocator() [38]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector(unsigned int, std::allocator<int> const&) [57]
+                0.00    0.00       1/2           std::allocator<int>::~allocator() [29]
+                0.00    0.00       1/1           std::random_device::~random_device() [49]
+-----------------------------------------------
+                0.00    0.00   20002/3812246     main [1]
+                0.18    0.00 3792244/3812246     GenerateText(double***, int, int, int) [2]
+[3]      9.9    0.18    0.00 3812246         std::vector<int, std::allocator<int> >::operator[](unsigned int) [3]
+-----------------------------------------------
+                0.07    0.00       1/1           main [1]
+[4]      3.8    0.07    0.00       1         std::vector<int, std::allocator<int> >::~vector() [4]
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [30]
+                0.00    0.00       1/1           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [64]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [47]
+-----------------------------------------------
+                0.02    0.02   20000/20000       GenerateText(double***, int, int, int) [2]
+[5]      2.2    0.02    0.02   20000         double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&) [5]
+                0.01    0.00   40000/40000       std::log(long double) [6]
+                0.01    0.00   20000/20000       std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::max() [7]
+                0.00    0.00   40000/40000       std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::min() [18]
+                0.00    0.00   20000/20000       unsigned int const& std::min<unsigned int>(unsigned int const&, unsigned int const&) [22]
+                0.00    0.00   20000/20000       unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [21]
+                0.00    0.00   20000/20000       std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::operator()() [20]
+-----------------------------------------------
+                0.01    0.00   40000/40000       double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&) [5]
+[6]      0.5    0.01    0.00   40000         std::log(long double) [6]
+-----------------------------------------------
+                0.01    0.00   20000/20000       double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&) [5]
+[7]      0.5    0.01    0.00   20000         std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::max() [7]
+-----------------------------------------------
+                0.01    0.00       1/1           __libc_csu_init [10]
+[8]      0.5    0.01    0.00       1         _GLOBAL__sub_I__Z12GenerateTextPPPdiii [8]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [31]
+-----------------------------------------------
+                0.01    0.00       1/1           main [1]
+[9]      0.5    0.01    0.00       1         read(int***, int**) [9]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     0.5    0.00    0.01                 __libc_csu_init [10]
+                0.01    0.00       1/1           _GLOBAL__sub_I__Z12GenerateTextPPPdiii [8]
+-----------------------------------------------
+                0.00    0.00   40000/40000       double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&) [5]
+[18]     0.0    0.00    0.00   40000         std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::min() [18]
+-----------------------------------------------
+                0.00    0.00   20003/20003       main [1]
+[19]     0.0    0.00    0.00   20003         std::vector<int, std::allocator<int> >::size() const [19]
+-----------------------------------------------
+                0.00    0.00   20000/20000       double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&) [5]
+[20]     0.0    0.00    0.00   20000         std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::operator()() [20]
+                0.00    0.00      33/33          std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::_M_gen_rand() [27]
+-----------------------------------------------
+                0.00    0.00   20000/20000       double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&) [5]
+[21]     0.0    0.00    0.00   20000         unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [21]
+-----------------------------------------------
+                0.00    0.00   20000/20000       double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&) [5]
+[22]     0.0    0.00    0.00   20000         unsigned int const& std::min<unsigned int>(unsigned int const&, unsigned int const&) [22]
+-----------------------------------------------
+                0.00    0.00     624/624         unsigned int std::__detail::__mod<unsigned int, 0u, 1u, 0u>(unsigned int) [24]
+[23]     0.0    0.00    0.00     624         std::__detail::_Mod<unsigned int, 0u, 1u, 0u, true, false>::__calc(unsigned int) [23]
+-----------------------------------------------
+                0.00    0.00     624/624         std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::seed(unsigned int) [53]
+[24]     0.0    0.00    0.00     624         unsigned int std::__detail::__mod<unsigned int, 0u, 1u, 0u>(unsigned int) [24]
+                0.00    0.00     624/624         std::__detail::_Mod<unsigned int, 0u, 1u, 0u, true, false>::__calc(unsigned int) [23]
+-----------------------------------------------
+                0.00    0.00     623/623         unsigned int std::__detail::__mod<unsigned int, 624u, 1u, 0u>(unsigned int) [26]
+[25]     0.0    0.00    0.00     623         std::__detail::_Mod<unsigned int, 624u, 1u, 0u, true, true>::__calc(unsigned int) [25]
+-----------------------------------------------
+                0.00    0.00     623/623         std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::seed(unsigned int) [53]
+[26]     0.0    0.00    0.00     623         unsigned int std::__detail::__mod<unsigned int, 624u, 1u, 0u>(unsigned int) [26]
+                0.00    0.00     623/623         std::__detail::_Mod<unsigned int, 624u, 1u, 0u, true, true>::__calc(unsigned int) [25]
+-----------------------------------------------
+                0.00    0.00      33/33          std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::operator()() [20]
+[27]     0.0    0.00    0.00      33         std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::_M_gen_rand() [27]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<int>::~allocator() [29]
+[28]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<int>::~new_allocator() [28]
+-----------------------------------------------
+                0.00    0.00       1/2           GenerateText(double***, int, int, int) [2]
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [43]
+[29]     0.0    0.00    0.00       2         std::allocator<int>::~allocator() [29]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<int>::~new_allocator() [28]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<int, std::allocator<int> >::~vector() [4]
+                0.00    0.00       1/2           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned int) [56]
+[30]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z12GenerateTextPPPdiii [8]
+[31]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [31]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned int) [51]
+[32]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned int) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned int) [52]
+[33]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) [33]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::max_size() const [36]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::allocator(std::allocator<int> const&) [37]
+[34]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [34]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::allocator() [38]
+[35]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::new_allocator() [35]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) [33]
+[36]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::max_size() const [36]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [42]
+[37]     0.0    0.00    0.00       1         std::allocator<int>::allocator(std::allocator<int> const&) [37]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [34]
+-----------------------------------------------
+                0.00    0.00       1/1           GenerateText(double***, int, int, int) [2]
+[38]     0.0    0.00    0.00       1         std::allocator<int>::allocator() [38]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::new_allocator() [35]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Niter_base<int*>::iterator_type std::__niter_base<int*>(int*) [59]
+[39]     0.0    0.00    0.00       1         std::_Iter_base<int*, false>::_S_base(int*) [39]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<int*>(int*, int*) [63]
+[40]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [40]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned int) [45]
+[41]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [41]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned int) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [46]
+[42]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [42]
+                0.00    0.00       1/1           std::allocator<int>::allocator(std::allocator<int> const&) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [47]
+[43]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [43]
+                0.00    0.00       1/2           std::allocator<int>::~allocator() [29]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [47]
+[44]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [44]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned int) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [46]
+[45]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned int) [45]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [41]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector(unsigned int, std::allocator<int> const&) [57]
+[46]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [46]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [42]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned int) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [4]
+[47]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [47]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [44]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           GenerateText(double***, int, int, int) [2]
+[48]     0.0    0.00    0.00       1         std::random_device::random_device(std::string const&) [48]
+-----------------------------------------------
+                0.00    0.00       1/1           GenerateText(double***, int, int, int) [2]
+[49]     0.0    0.00    0.00       1         std::random_device::~random_device() [49]
+-----------------------------------------------
+                0.00    0.00       1/1           GenerateText(double***, int, int, int) [2]
+[50]     0.0    0.00    0.00       1         std::random_device::operator()() [50]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [44]
+[51]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned int) [51]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned int) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [41]
+[52]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned int) [52]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) [33]
+-----------------------------------------------
+                0.00    0.00       1/1           std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::mersenne_twister_engine(unsigned int) [54]
+[53]     0.0    0.00    0.00       1         std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::seed(unsigned int) [53]
+                0.00    0.00     624/624         unsigned int std::__detail::__mod<unsigned int, 0u, 1u, 0u>(unsigned int) [24]
+                0.00    0.00     623/623         unsigned int std::__detail::__mod<unsigned int, 624u, 1u, 0u>(unsigned int) [26]
+-----------------------------------------------
+                0.00    0.00       1/1           GenerateText(double***, int, int, int) [2]
+[54]     0.0    0.00    0.00       1         std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::mersenne_twister_engine(unsigned int) [54]
+                0.00    0.00       1/1           std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::seed(unsigned int) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__uninitialized_default_n<int*, unsigned int>(int*, unsigned int) [60]
+[55]     0.0    0.00    0.00       1         void std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned int>(int*, unsigned int) [55]
+                0.00    0.00       1/1           int* std::fill_n<int*, unsigned int, int>(int*, unsigned int, int const&) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector(unsigned int, std::allocator<int> const&) [57]
+[56]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned int) [56]
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [30]
+                0.00    0.00       1/1           void std::__uninitialized_default_n_a<int*, unsigned int, int>(int*, unsigned int, std::allocator<int>&) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           GenerateText(double***, int, int, int) [2]
+[57]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::vector(unsigned int, std::allocator<int> const&) [57]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [46]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned int) [56]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::fill_n<int*, unsigned int, int>(int*, unsigned int, int const&) [62]
+[58]     0.0    0.00    0.00       1         __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, int*>::__type std::__fill_n_a<int*, unsigned int, int>(int*, unsigned int, int const&) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::fill_n<int*, unsigned int, int>(int*, unsigned int, int const&) [62]
+[59]     0.0    0.00    0.00       1         std::_Niter_base<int*>::iterator_type std::__niter_base<int*>(int*) [59]
+                0.00    0.00       1/1           std::_Iter_base<int*, false>::_S_base(int*) [39]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__uninitialized_default_n_a<int*, unsigned int, int>(int*, unsigned int, std::allocator<int>&) [61]
+[60]     0.0    0.00    0.00       1         void std::__uninitialized_default_n<int*, unsigned int>(int*, unsigned int) [60]
+                0.00    0.00       1/1           void std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned int>(int*, unsigned int) [55]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned int) [56]
+[61]     0.0    0.00    0.00       1         void std::__uninitialized_default_n_a<int*, unsigned int, int>(int*, unsigned int, std::allocator<int>&) [61]
+                0.00    0.00       1/1           void std::__uninitialized_default_n<int*, unsigned int>(int*, unsigned int) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned int>(int*, unsigned int) [55]
+[62]     0.0    0.00    0.00       1         int* std::fill_n<int*, unsigned int, int>(int*, unsigned int, int const&) [62]
+                0.00    0.00       1/1           std::_Niter_base<int*>::iterator_type std::__niter_base<int*>(int*) [59]
+                0.00    0.00       1/1           __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, int*>::__type std::__fill_n_a<int*, unsigned int, int>(int*, unsigned int, int const&) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [64]
+[63]     0.0    0.00    0.00       1         void std::_Destroy<int*>(int*, int*) [63]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [40]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [4]
+[64]     0.0    0.00    0.00       1         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [64]
+                0.00    0.00       1/1           void std::_Destroy<int*>(int*, int*) [63]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [8] _GLOBAL__sub_I__Z12GenerateTextPPPdiii [44] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [4] std::vector<int, std::allocator<int> >::~vector()
+   [2] GenerateText(double***, int, int, int) [45] std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned int) [3] std::vector<int, std::allocator<int> >::operator[](unsigned int)
+  [31] __static_initialization_and_destruction_0(int, int) [30] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [23] std::__detail::_Mod<unsigned int, 0u, 1u, 0u, true, false>::__calc(unsigned int)
+   [9] read(int***, int**)    [46] std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [25] std::__detail::_Mod<unsigned int, 624u, 1u, 0u, true, true>::__calc(unsigned int)
+  [32] __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned int) [47] std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [24] unsigned int std::__detail::__mod<unsigned int, 0u, 1u, 0u>(unsigned int)
+  [33] __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) [48] std::random_device::random_device(std::string const&) [26] unsigned int std::__detail::__mod<unsigned int, 624u, 1u, 0u>(unsigned int)
+  [34] __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [49] std::random_device::~random_device() [58] __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, int*>::__type std::__fill_n_a<int*, unsigned int, int>(int*, unsigned int, int const&)
+  [35] __gnu_cxx::new_allocator<int>::new_allocator() [50] std::random_device::operator()() [59] std::_Niter_base<int*>::iterator_type std::__niter_base<int*>(int*)
+  [28] __gnu_cxx::new_allocator<int>::~new_allocator() [51] std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned int) [5] double std::generate_canonical<double, 10u, std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u> >(std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>&)
+  [36] __gnu_cxx::new_allocator<int>::max_size() const [52] std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned int) [60] void std::__uninitialized_default_n<int*, unsigned int>(int*, unsigned int)
+  [19] std::vector<int, std::allocator<int> >::size() const [27] std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::_M_gen_rand() [61] void std::__uninitialized_default_n_a<int*, unsigned int, int>(int*, unsigned int, std::allocator<int>&)
+  [37] std::allocator<int>::allocator(std::allocator<int> const&) [7] std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::max() [6] std::log(long double)
+  [38] std::allocator<int>::allocator() [18] std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::min() [21] unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+  [29] std::allocator<int>::~allocator() [53] std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::seed(unsigned int) [22] unsigned int const& std::min<unsigned int>(unsigned int const&, unsigned int const&)
+  [39] std::_Iter_base<int*, false>::_S_base(int*) [54] std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::mersenne_twister_engine(unsigned int) [62] int* std::fill_n<int*, unsigned int, int>(int*, unsigned int, int const&)
+  [40] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [20] std::mersenne_twister_engine<unsigned int, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u>::operator()() [63] void std::_Destroy<int*>(int*, int*)
+  [41] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [55] void std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned int>(int*, unsigned int) [64] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  [42] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [56] std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned int) [1] main
+  [43] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [57] std::vector<int, std::allocator<int> >::vector(unsigned int, std::allocator<int> const&)
