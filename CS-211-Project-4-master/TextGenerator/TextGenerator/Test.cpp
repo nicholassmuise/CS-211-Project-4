@@ -42,7 +42,7 @@ std::vector<int> GenerateText(double*** trans, int steps, int start, int start2)
 //Read
 void read(int*** triCount, int** biCount) {
 	std::ifstream infile;
-	infile.open("Input_Assembly.txt", std::ifstream::in);
+	infile.open("Input_King_James_5x.txt", std::ifstream::in);
 	int prev2 = infile.get();
 	int prev = infile.get();
 	int on = infile.get();
