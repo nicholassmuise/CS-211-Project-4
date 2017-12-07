@@ -5,6 +5,11 @@ cd <directory>
 objdump -d binary > assembly.s
 g++ -std=c++11 -O3 code.cpp -o binary
 
+WITH PROFILING
+g++ -std=c++11 -pg -O3 code.cpp -o binary
+
+gprof binary > output.txt
+
 
 
 
